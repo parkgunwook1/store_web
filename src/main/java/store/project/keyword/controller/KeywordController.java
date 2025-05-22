@@ -51,7 +51,11 @@ public class KeywordController {
      */
     @GetMapping("/top")
     public List<Keyword> getTopKeywords() {
+        List<Keyword> list = keywordService.getTopKeywords();
 
+        for (Keyword k : list) {
+            System.out.println(k.toString());
+        }
         return keywordService.getTopKeywords();
     }
 

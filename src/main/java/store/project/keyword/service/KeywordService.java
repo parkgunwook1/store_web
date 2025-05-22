@@ -31,7 +31,7 @@ public class KeywordService {
     }
 
     public List<Keyword> getTopKeywords() {
-
-        return null;
+        List<Keyword> list = keywordRepository.getTopKeywords();
+        return list;
     }
 }
